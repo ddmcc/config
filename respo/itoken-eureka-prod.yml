@@ -1,9 +1,7 @@
-﻿spring:
+﻿---
+spring:
   application:
     name: itoken-eureka
-
----
-spring:
   profiles: eureka1
 server:
   port: 8761
@@ -19,6 +17,8 @@ eureka:
 
 ---
 spring:
+  application:
+    name: itoken-eureka
   profiles: eureka2
 server:
   port: 8861
@@ -34,6 +34,8 @@ eureka:
 
 ---
 spring:
+  application:
+    name: itoken-eureka
   profiles: eureka3
 server:
   port: 8961
