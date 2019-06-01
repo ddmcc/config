@@ -1,14 +1,15 @@
-﻿---
-spring:
+﻿spring:
   application:
     name: itoken-eureka
-  profiles: eureka1
+
+---
 server:
   port: 8761
 
 eureka:
   instance:
-    hostname: host
+    hostname: 106.14.133.27
+    appname: itoken-eureka
   client:
     registerWithEureka: true
     fetchRegistry: true
@@ -16,16 +17,13 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8861/eureka/,http://${eureka.instance.hostname}:8961/eureka/
 
 ---
-spring:
-  application:
-    name: itoken-eureka
-  profiles: eureka2
 server:
   port: 8861
 
 eureka:
   instance:
-    hostname: host
+    hostname: 106.14.133.27
+    appname: itoken-eureka
   client:
     registerWithEureka: true
     fetchRegistry: true
@@ -33,16 +31,13 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8861/eureka/,http://${eureka.instance.hostname}:8961/eureka/
 
 ---
-spring:
-  application:
-    name: itoken-eureka
-  profiles: eureka3
 server:
   port: 8961
 
 eureka:
   instance:
-    hostname: host
+    hostname: 106.14.133.27
+    appname: itoken-eureka
   client:
     registerWithEureka: true
     fetchRegistry: true
