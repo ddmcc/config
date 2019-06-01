@@ -1,8 +1,8 @@
-﻿spring:
+﻿---
+spring:
   application:
     name: itoken-eureka
-
----
+  profiles: eureka1
 server:
   port: 8761
 
@@ -17,6 +17,10 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8861/eureka/,http://${eureka.instance.hostname}:8961/eureka/
 
 ---
+spring:
+  application:
+    name: itoken-eureka
+  profiles: eureka2
 server:
   port: 8861
 
@@ -31,6 +35,10 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8861/eureka/,http://${eureka.instance.hostname}:8961/eureka/
 
 ---
+spring:
+  application:
+    name: itoken-eureka
+  profiles: eureka3
 server:
   port: 8961
 
