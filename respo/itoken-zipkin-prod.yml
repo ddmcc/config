@@ -15,3 +15,16 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://192.168.171.135:8761/eureka/,http://192.168.171.135:8861/eureka/,http://192.168.171.135:8961/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
