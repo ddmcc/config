@@ -20,7 +20,7 @@
       driver-class-name: com.mysql.jdbc.Driver
 
 server:
-  port: 8501
+  port: 10001
 
 mybatis:
   type-aliases-package: com.itoken.service.admin.domain
