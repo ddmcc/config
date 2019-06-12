@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: itoken-web-admin
+  boot:
+    admin:
+      client:
+        url: http://192.168.171.135:8084
+  zipkin:
+    base-url: http://192.168.171.135:9411
+  thymeleaf:
+      cache: false
+      mode: LEGACYHTML5
+      encoding: UTF-8
+      servlet:
+        content-type: text/html
+
+server:
+  port: 20001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://106.14.133.27:8761/eureka/,http://106.14.133.27:8861/eureka/,http://106.14.133.27:8961/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
