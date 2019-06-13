@@ -17,6 +17,10 @@ spring:
 server:
   port: 20001
 
+feign:
+  hystrix:
+    enable: true
+
 eureka:
   client:
     serviceUrl:
