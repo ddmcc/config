@@ -6,7 +6,7 @@
       client:
         url: http://192.168.171.135:8084
   zipkin:
-    base-url: http://192.168.171.135:9411
+    base-url: http://192.168.132.129:9411
 
 server:
   port: 9411
@@ -14,7 +14,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.171.135:8761/eureka/,http://192.168.171.135:8861/eureka/,http://192.168.171.135:8961/eureka/
+      defaultZone: http://106.14.133.27:8761/eureka/,http://106.14.133.27:8861/eureka/,http://106.14.133.27:8961/eureka/
 
 management:
   endpoint:
