@@ -8,7 +8,7 @@ server:
 eureka:
   instance:
     hostname: host
-    preferIpAddress: false
+    prefer-ip-address: false
   client:
     registerWithEureka: true
     fetchRegistry: true
